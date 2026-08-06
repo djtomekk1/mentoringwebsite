@@ -25,6 +25,10 @@
   .en [data-de],.en [data-pl]{display:none}.en [data-en]{display:revert}
   .pl [data-de],.pl [data-en]{display:none}.pl [data-pl]{display:revert}
 
+  /* OFFER BANNER */
+  .offer-banner{background:var(--gold-grad);color:#1A1407;text-align:center;padding:10px 18px;font-family:"Space Mono",monospace;font-size:13px;letter-spacing:0.06em;font-weight:700;line-height:1.5;}
+  .price-old{font-family:"Space Mono",monospace;font-weight:400;font-size:13px;color:var(--paper-faint);text-decoration:line-through;margin-right:7px;}
+
   /* NAV */
   .nav{position:sticky;top:0;z-index:50;background:rgba(12,12,15,0.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
@@ -211,6 +215,12 @@
 </head>
 <body>
 
+<div class="offer-banner">
+  <span data-de>★ Exklusives Angebot — 50 % Rabatt auf alle Sessions · nur für kurze Zeit ★</span>
+  <span data-en>★ Exclusive Offer — 50% Off All Sessions · Limited Time Only ★</span>
+  <span data-pl>★ Ekskluzywna oferta — 50% zniżki na wszystkie sesje · tylko przez ograniczony czas ★</span>
+</div>
+
 <nav class="nav">
   <div class="wrap nav-inner">
     <div class="brand">DJ&nbsp;<b>TOMEKK</b></div>
@@ -357,13 +367,13 @@
     <div class="tl-meta"><span><span data-de>Format</span><span data-en>Format</span><span data-pl>Format</span></span><span><span data-de>Laufzeit / Preis</span><span data-en>Duration / Price</span><span data-pl>Czas / Cena</span></span></div>
 
     <div class="track">
-      <button class="track-head" aria-expanded="false" data-tier="Quick Call (30 Min)" data-price="149 €" data-url="https://cal.eu/djtomekk/30min">
+      <button class="track-head" aria-expanded="false" data-tier="Quick Call (30 Min)" data-price="75 €" data-url="https://cal.eu/djtomekk/30min">
         <span class="track-cat">A1</span>
         <span class="track-title-wrap">
           <span class="track-title">Quick Call</span>
           <span class="track-desc"><span data-de>Eine konkrete Frage, eine schnelle, ehrliche Einschätzung.</span><span data-en>One specific question, one fast and honest answer.</span><span data-pl>Jedno konkretne pytanie, szybka i szczera odpowiedź.</span></span>
         </span>
-        <span class="track-time">30:00</span><span class="track-price">149&nbsp;€</span><span class="track-toggle mono">+</span>
+        <span class="track-time">30:00</span><span class="track-price"><span class="price-old">149&nbsp;€</span>75&nbsp;€</span><span class="track-toggle mono">+</span>
       </button>
       <div class="track-panel"><div class="track-panel-inner">
         <ul class="track-incl">
@@ -376,13 +386,13 @@
     </div>
 
     <div class="track">
-      <button class="track-head" aria-expanded="false" data-tier="Artist Strategy (60 Min)" data-price="299 €" data-url="https://cal.eu/djtomekk/60min">
+      <button class="track-head" aria-expanded="false" data-tier="Artist Strategy (60 Min)" data-price="149 €" data-url="https://cal.eu/djtomekk/60min">
         <span class="track-cat">A2</span>
         <span class="track-title-wrap">
           <span class="track-title">Artist Strategy Session <span class="badge"><span data-de>Am meisten gebucht</span><span data-en>Most popular</span><span data-pl>Najpopularniejsza</span></span></span>
           <span class="track-desc"><span data-de>Karriere, Releases, Spotify &amp; Branding in einem Rutsch.</span><span data-en>Career, releases, Spotify &amp; branding in one go.</span><span data-pl>Kariera, wydania, Spotify i branding za jednym razem.</span></span>
         </span>
-        <span class="track-time">60:00</span><span class="track-price">299&nbsp;€</span><span class="track-toggle mono">+</span>
+        <span class="track-time">60:00</span><span class="track-price"><span class="price-old">299&nbsp;€</span>149&nbsp;€</span><span class="track-toggle mono">+</span>
       </button>
       <div class="track-panel"><div class="track-panel-inner">
         <ul class="track-incl">
@@ -396,13 +406,13 @@
     </div>
 
     <div class="track">
-      <button class="track-head" aria-expanded="false" data-tier="VIP Mentoring (90 Min)" data-price="499 €" data-url="https://cal.eu/djtomekk/vip-mentoring">
+      <button class="track-head" aria-expanded="false" data-tier="VIP Mentoring (90 Min)" data-price="249 €" data-url="https://cal.eu/djtomekk/vip-mentoring">
         <span class="track-cat">B1</span>
         <span class="track-title-wrap">
           <span class="track-title">VIP Mentoring</span>
           <span class="track-desc"><span data-de>Tiefenanalyse, Aktionsplan und schriftliches Follow-up.</span><span data-en>Deep analysis, action plan and written follow-up.</span><span data-pl>Dogłębna analiza, plan działania i pisemne podsumowanie.</span></span>
         </span>
-        <span class="track-time">90:00</span><span class="track-price">499&nbsp;€</span><span class="track-toggle mono">+</span>
+        <span class="track-time">90:00</span><span class="track-price"><span class="price-old">499&nbsp;€</span>249&nbsp;€</span><span class="track-toggle mono">+</span>
       </button>
       <div class="track-panel"><div class="track-panel-inner">
         <ul class="track-incl">
@@ -416,13 +426,13 @@
     </div>
 
     <div class="track">
-      <button class="track-head" aria-expanded="false" data-tier="Mentoring 4 Wochen" data-price="999 €">
+      <button class="track-head" aria-expanded="false" data-tier="Mentoring 4 Wochen" data-price="499 €">
         <span class="track-cat">B2</span>
         <span class="track-title-wrap">
           <span class="track-title"><span data-de>Elite Mentoring (4 Wochen)</span><span data-en>Elite Mentoring (4 Weeks)</span><span data-pl>Elite Mentoring (4 tygodnie)</span></span>
           <span class="track-desc"><span data-de>Intensivbegleitung über einen Monat.</span><span data-en>Intensive support over one month.</span><span data-pl>Intensywna opieka przez miesiąc.</span></span>
         </span>
-        <span class="track-time">4×30</span><span class="track-price">999&nbsp;€</span><span class="track-toggle mono">+</span>
+        <span class="track-time">4×30</span><span class="track-price"><span class="price-old">999&nbsp;€</span>499&nbsp;€</span><span class="track-toggle mono">+</span>
       </button>
       <div class="track-panel"><div class="track-panel-inner">
         <ul class="track-incl">
@@ -436,13 +446,13 @@
     </div>
 
     <div class="track">
-      <button class="track-head" aria-expanded="false" data-tier="2 Instagram Posts" data-price="499 €">
+      <button class="track-head" aria-expanded="false" data-tier="2 Instagram Posts" data-price="249 €">
         <span class="track-cat">C1</span>
         <span class="track-title-wrap">
           <span class="track-title">2 Instagram Posts</span>
           <span class="track-desc"><span data-de>Tomekk promotet dich auf seinem verifizierten Account.</span><span data-en>Tomekk promotes you on his verified account.</span><span data-pl>Tomekk promuje cię na swoim zweryfikowanym koncie.</span></span>
         </span>
-        <span class="track-time">—</span><span class="track-price">499&nbsp;€</span><span class="track-toggle mono">+</span>
+        <span class="track-time">—</span><span class="track-price"><span class="price-old">499&nbsp;€</span>249&nbsp;€</span><span class="track-toggle mono">+</span>
       </button>
       <div class="track-panel"><div class="track-panel-inner">
         <ul class="track-incl">
@@ -482,29 +492,29 @@
       <a class="booking-card" href="https://cal.eu/djtomekk/30min" target="_blank" rel="noopener">
         <div class="bc-cat">A1 · 30 Min</div><div class="bc-title">Quick Call</div>
         <div class="bc-desc"><span data-de>Eine konkrete Frage, eine ehrliche Einschätzung.</span><span data-en>One question, one honest answer.</span><span data-pl>Jedno pytanie, szczera odpowiedź.</span></div>
-        <div class="bc-footer"><span class="bc-price">149 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
+        <div class="bc-footer"><span class="bc-price"><span class="price-old">149 €</span>75 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
       </a>
       <a class="booking-card bc-featured" href="https://cal.eu/djtomekk/60min" target="_blank" rel="noopener">
         <div class="bc-badge"><span data-de>Am meisten gebucht</span><span data-en>Most popular</span><span data-pl>Najpopularniejsza</span></div>
         <div class="bc-cat">A2 · 60 Min</div><div class="bc-title">Artist Strategy</div>
         <div class="bc-desc"><span data-de>Karriere, Releases, Spotify &amp; Branding.</span><span data-en>Career, releases, Spotify &amp; branding.</span><span data-pl>Kariera, wydania, Spotify i branding.</span></div>
-        <div class="bc-footer"><span class="bc-price">299 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
+        <div class="bc-footer"><span class="bc-price"><span class="price-old">299 €</span>149 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
       </a>
       <a class="booking-card" href="https://cal.eu/djtomekk/vip-mentoring" target="_blank" rel="noopener">
         <div class="bc-cat">B1 · 90 Min</div><div class="bc-title">VIP Mentoring</div>
         <div class="bc-desc"><span data-de>Tiefenanalyse &amp; Aktionsplan.</span><span data-en>Deep analysis &amp; action plan.</span><span data-pl>Dogłębna analiza i plan działania.</span></div>
-        <div class="bc-footer"><span class="bc-price">499 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
+        <div class="bc-footer"><span class="bc-price"><span class="price-old">499 €</span>249 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
       </a>
       <a class="booking-card" href="https://cal.eu/djtomekk/elite-mentoring" target="_blank" rel="noopener">
         <div class="bc-cat">B2 · 4 × 30 Min</div>
         <div class="bc-title"><span data-de>Elite Mentoring 4 Wochen</span><span data-en>Elite Mentoring 4 Weeks</span><span data-pl>Elite Mentoring 4 tygodnie</span></div>
         <div class="bc-desc"><span data-de>Calls + WhatsApp + Song-Feedback.</span><span data-en>Calls + WhatsApp + song feedback.</span><span data-pl>Rozmowy + WhatsApp + feedback do piosenek.</span></div>
-        <div class="bc-footer"><span class="bc-price">999 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
+        <div class="bc-footer"><span class="bc-price"><span class="price-old">999 €</span>499 €</span><span class="bc-btn"><span data-de>Jetzt buchen →</span><span data-en>Book now →</span><span data-pl>Zarezerwuj →</span></span></div>
       </a>
       <a class="booking-card" href="mailto:impressum@djtomekk.com?subject=Instagram%20Posts%20Anfrage" target="_blank" rel="noopener">
         <div class="bc-cat">C1 · Instagram</div><div class="bc-title">2 Instagram Posts</div>
         <div class="bc-desc"><span data-de>Promotion auf Tomekks verifiziertem Account.</span><span data-en>Promotion on Tomekk's verified account.</span><span data-pl>Promocja na zweryfikowanym koncie Tomekka.</span></div>
-        <div class="bc-footer"><span class="bc-price">499 €</span><span class="bc-btn"><span data-de>Anfrage →</span><span data-en>Inquire →</span><span data-pl>Zapytaj →</span></span></div>
+        <div class="bc-footer"><span class="bc-price"><span class="price-old">499 €</span>249 €</span><span class="bc-btn"><span data-de>Anfrage →</span><span data-en>Inquire →</span><span data-pl>Zapytaj →</span></span></div>
       </a>
     </div>
     <p class="booking-note"><span data-de>Zahlung via PayPal direkt bei der Buchung. Mentoring &amp; Instagram-Posts per E-Mail anfragen.</span><span data-en>Payment via PayPal at booking. Mentoring &amp; Instagram posts via email inquiry.</span><span data-pl>Płatność przez PayPal przy rezerwacji. Mentoring i posty na Instagramie — zapytaj przez e-mail.</span></p>
